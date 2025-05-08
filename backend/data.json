@@ -1,0 +1,11 @@
+{
+    "sales":
+    [
+      
+      {
+        "totalSales":2000,
+        "credit":true
+      }  
+
+    ]
+}
