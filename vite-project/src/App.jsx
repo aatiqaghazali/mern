@@ -74,7 +74,7 @@ function App() {
     <div>
       {
         data.map((item)=>(
-             <div key={item._id}>{item.}</div>
+             <div key={item._id}>{item}</div>
         )
 
         )
