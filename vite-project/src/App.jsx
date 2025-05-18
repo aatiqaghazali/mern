@@ -73,12 +73,15 @@ function App() {
 
     <div>
       {
-        data.map((item)=>(
-             <div key={item._id}>{item}</div>
-        )
+  data.map((item) => (
+    <div key={item._id}>
+      <p>User Name: {item.userName}</p>
+      <p>Email: {item.email}</p>
+      <p>Rating: {item.rating}</p>
+    </div>
+  ))
+}
 
-        )
-      }
     </div>
     <input value={Email} onChange={(e)=>{setEmail(e.target.value)}} type='text' placeholder='email'></input>
     <input value={username} onChange={(e)=>{setUsername(e.target.value)}} type='text' placeholder='username'></input>
