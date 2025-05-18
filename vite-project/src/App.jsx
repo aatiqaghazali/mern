@@ -17,7 +17,7 @@ function App() {
     async function fetchData()
    {
 
-    const response = await axios.get('http://localhost:3000/fetchfeedback');
+    const response = await axios.get('http://18.141.209.250:3000/fetchfeedback');
     
     setData(response.data)
     console.log(data);
@@ -34,7 +34,7 @@ function App() {
       };
        console.log (userData);
 
-       const response = await axios.post ('http://localhost:3000/feedback', userData);
+       const response = await axios.post ('http://18.141.209.250:3000/feedback', userData);
        console.log(response);
 
   }
@@ -49,7 +49,7 @@ function App() {
       const id='681c543cb5d592218787c514';
        console.log (userData);
 
-       const response = await axios.put (`http://localhost:3000/updatefeedback/${id}`, userData);
+       const response = await axios.put (`http://18.141.209.250:3000/updatefeedback/${id}`, userData);
        console.log(response);
 
   }
@@ -59,7 +59,7 @@ function App() {
       const id='681c543cb5d592218787c514';
       
 
-       const response = await axios.delete(`http://localhost:3000/deletefeedback/${id}`);
+       const response = await axios.delete(`http://18.141.209.250:3000/deletefeedback/${id}`);
        console.log(response);
 
   }
